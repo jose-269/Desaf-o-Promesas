@@ -8,10 +8,10 @@ const consumirApi = async () => {
         const dataArr = data;
 
         const titles = await dataArr.forEach((el, index) => {
-        if(index < 20) {
-            return  console.log(el.id, el.title);
-        };
-        })
+            if(index < 20) {
+                return  console.log(el.id, el.title);
+            };
+        });
             
     }catch(error) {
         console.log(error);
@@ -21,8 +21,8 @@ const consumirApi = async () => {
 
 const info = async () =>{
     const msje = () =>  console.log("Información Enviada");
-   return setTimeout((msje),3000);
-} 
+    return setTimeout((msje),3000);
+}; 
 
 
 (async() => {
